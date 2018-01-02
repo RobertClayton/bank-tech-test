@@ -1,8 +1,8 @@
 describe 'transaction' do
-  describe 'new' do
-    it 'user can deposit an amount' do
+  describe 'when creating a new transaction' do
+    it 'the user can deposit an amount' do
       transaction = Transaction.new
-      expect(transaction.amount).to exist
+      expect(transaction.amount).to eq(0)
     end
   end
 end
