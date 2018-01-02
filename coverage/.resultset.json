@@ -1,10 +1,27 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/robertclayton/Library/Mobile Documents/com~apple~CloudDocs/Projects/bank-tech-test/spec/feature_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
       "/Users/robertclayton/Library/Mobile Documents/com~apple~CloudDocs/Projects/bank-tech-test/spec/transaction_spec.rb": [
         1,
         1,
         1,
+        1,
+        null,
+        null,
         1,
         1,
         null,
@@ -12,6 +29,6 @@
         null
       ]
     },
-    "timestamp": 1514905703
+    "timestamp": 1514909337
   }
 }

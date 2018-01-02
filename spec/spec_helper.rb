@@ -1,6 +1,7 @@
 require 'simplecov'
 require 'simplecov-console'
 
+require './lib/bank.rb'
 require './lib/transaction.rb'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(

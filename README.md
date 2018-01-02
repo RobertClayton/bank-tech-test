@@ -49,6 +49,12 @@ These tables are formatted as follows:
 
 **Map:**
 
+| Bank            |             |
+|-----------------|-------------|
+| deposit         | transaction |
+| withdraw        | statement   |
+| print_statement |             |
+
 | Transaction    |           |
 |----------------|-----------|
 | amount         | date      |
