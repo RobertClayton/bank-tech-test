@@ -1,4 +1,13 @@
+require 'simplecov'
+require 'simplecov-console'
+
 require './lib/transaction.rb'
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
+  [SimpleCov::Formatter::Console]
+)
+
+SimpleCov.start
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
