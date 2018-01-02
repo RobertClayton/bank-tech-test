@@ -1,4 +1,4 @@
-require './transaction.rb'
+require './lib/transaction.rb'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
