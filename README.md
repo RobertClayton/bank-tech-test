@@ -83,3 +83,4 @@ These tables are formatted as follows:
 * Cannot input more than 2 decimal points
 * Cannot use an invalid Date
 * Cannot use a Date in the future
+* When making a new transaction, date & amount must be entered in the correct order
