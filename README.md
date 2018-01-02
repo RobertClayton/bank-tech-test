@@ -42,35 +42,36 @@ date || credit || debit || balance
 ### Map of project
 
 These tables are formatted as follows:
-| class |
-|---|
+
+| class   |                  |
+|---------|------------------|
 | methods | required classes |
 
 **Map:**
 
-| Transaction                |
-|----------------------------|
+| Transaction    |           |
+|----------------|-----------|
 | amount         | date      |
 | date           | balance   |
 | update_balance | statement |
 | new_statement  |           |
 
-| Date    |
-|---------|
+| Date |  |
+|------|--|
 | date |  |
 
-| Balance    |
-|------------|
+| Balance |  |
+|---------|--|
 | balance |  |
 
-| Statement                           |
-|-------------------------------------|
+| Statement       |                   |
+|-----------------|-------------------|
 | new_transaction | date              |
 | print           | balance           |
 |                 | statement_history |
 
-| Statement_History     |
-|-----------------------|
+| Statement_History  |  |
+|--------------------|--|
 | new_transaction    |  |
 | list_of_statements |  |
 
