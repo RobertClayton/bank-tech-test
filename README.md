@@ -31,3 +31,54 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 ```
+
+## Notes
+
+* Statement appears in reverse order
+* American formatted date
+* Numbers as floats with 2 decimal points
+* Run through IRB
+
+### Map of project
+
+These tables are formatted as follows:
+| class |
+|---|
+| methods | required classes |
+
+**Map:**
+
+| Transaction                |
+|----------------------------|
+| amount         | date      |
+| date           | balance   |
+| update_balance | statement |
+| new_statement  |           |
+
+| Date    |
+|---------|
+| date |  |
+
+| Balance    |
+|------------|
+| balance |  |
+
+| Statement                           |
+|-------------------------------------|
+| new_transaction | date              |
+| print           | balance           |
+|                 | statement_history |
+
+| Statement_History     |
+|-----------------------|
+| new_transaction    |  |
+| list_of_statements |  |
+
+### Edge cases
+
+* Cannot deposit a negative amount
+* Cannot withdraw a negative amount
+* Cannot withdraw more than the balance
+* Cannot input more than 2 decimal points
+* Cannot use an invalid Date
+* Cannot use a Date in the future
