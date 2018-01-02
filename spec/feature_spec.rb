@@ -6,7 +6,8 @@ describe 'feature tests:' do
 
     it 'of 1000 on 10/01/2012' do
       @bank.deposit(1000, '10/01/2012')
-      expect(@statement_history.list_of_statements.last).to eq('10/01/2012 || 1000.00 || || 1000.00')
+      result = '10/01/2012 || 1000.00 || || 1000.00'
+      expect(@statement_history.list_of_statements.last).to eq(result)
     end
   end
 end
