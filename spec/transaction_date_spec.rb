@@ -18,15 +18,15 @@ describe 'TransactionDate: check_parse_date' do
   end
 
   it 'will throw error for incorrect day entry' do
-    error = 'Deposit rejected: incorrect date, please format as DD/MM/YYYY'
-    expect { @transaction_date.new_date('101/01/2012') }.to raise_error(error)
-    expect { @transaction_date.new_date('32/01/2012') }.to raise_error(error)
+    error = 'Deposit rejected: incorrect date, please format as MM/DD/YYYY'
+    expect { @transaction_date.new_date('01/101/2012') }.to raise_error(error)
+    expect { @transaction_date.new_date('01/32/2012') }.to raise_error(error)
   end
 
   it 'will throw error for incorrect month entry' do
-    error = 'Deposit rejected: incorrect date, please format as DD/MM/YYYY'
-    expect { @transaction_date.new_date('10/011/2012') }.to raise_error(error)
-    expect { @transaction_date.new_date('10/13/2012') }.to raise_error(error)
+    error = 'Deposit rejected: incorrect date, please format as MM/DD/YYYY'
+    expect { @transaction_date.new_date('011/10/2012') }.to raise_error(error)
+    expect { @transaction_date.new_date('13/10/2012') }.to raise_error(error)
   end
 end
 

@@ -5,22 +5,22 @@ class TransactionDate
   def initialize; end
 
   def new_date(date)
-    check_parse_date(date)
     check_for_letters(date)
+    check_parse_date(date)
     check_date_is_not_in_future(date)
-    parse_date(date)
+    format_date(date)
   end
 
   private
 
-  def parse_date(date)
-    Date.parse(date)
+  def format_date(date)
+    Date.strptime(date, '%m/%d/%Y')
   end
 
   def check_parse_date(date)
-    parse_date(date)
+    format_date(date)
   rescue ArgumentError
-    raise 'Deposit rejected: incorrect date, please format as DD/MM/YYYY'
+    raise 'Deposit rejected: incorrect date, please format as MM/DD/YYYY'
   end
 
   def check_for_letters(date)
@@ -30,6 +30,6 @@ class TransactionDate
 
   def check_date_is_not_in_future(date)
     raise 'Deposit rejected: cannot use a future date' unless
-      parse_date(date) <= Date.today
+      format_date(date) <= Date.today
   end
 end
