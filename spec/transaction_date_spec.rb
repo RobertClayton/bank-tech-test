@@ -12,7 +12,7 @@ describe 'TransactionDate: new_date' do
   end
 end
 
-describe 'TransactionDate: check_parse_date' do
+describe 'TransactionDate: check_format_date' do
   before(:each) do
     before_each
   end

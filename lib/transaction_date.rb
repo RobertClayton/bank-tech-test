@@ -6,7 +6,7 @@ class TransactionDate
 
   def new_date(date)
     check_for_letters(date)
-    check_parse_date(date)
+    check_format_date(date)
     check_date_is_not_in_future(date)
     format_date(date)
   end
@@ -17,7 +17,7 @@ class TransactionDate
     Date.strptime(date, '%m/%d/%Y')
   end
 
-  def check_parse_date(date)
+  def check_format_date(date)
     format_date(date)
   rescue ArgumentError
     raise 'Deposit rejected: incorrect date, please format as MM/DD/YYYY'
