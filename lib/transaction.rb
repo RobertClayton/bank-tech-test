@@ -1,6 +1,6 @@
-require 'balance'
-require 'transaction_amount'
-require 'transaction_date'
+require './lib/balance.rb'
+require './lib/transaction_amount.rb'
+require './lib/transaction_date.rb'
 
 # This class will be used to make new withdrawal or deposit transactions
 class Transaction
