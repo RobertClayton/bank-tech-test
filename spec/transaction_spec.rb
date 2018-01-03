@@ -4,7 +4,7 @@ def create_transaction
   @transaction = Transaction.new
 end
 
-describe 'Transaction: deposit' do
+describe 'Transaction: #deposit' do
   before(:each) do
     create_transaction
   end

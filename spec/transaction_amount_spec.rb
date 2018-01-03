@@ -2,7 +2,7 @@ def create_transaction_amount
   @transaction_amount = TransactionAmount.new
 end
 
-describe 'TransactionAmount: new_amount' do
+describe 'TransactionAmount: #new_amount' do
   before(:each) do
     create_transaction_amount
   end
@@ -16,7 +16,7 @@ describe 'TransactionAmount: new_amount' do
   end
 end
 
-describe 'TransactionAmount: check_that_number_was_entered' do
+describe 'TransactionAmount: #check_that_number_was_entered' do
   before(:each) do
     create_transaction_amount
   end
@@ -27,7 +27,7 @@ describe 'TransactionAmount: check_that_number_was_entered' do
   end
 end
 
-describe 'TransactionAmount: check_for_more_than_two_decimal_places' do
+describe 'TransactionAmount: #check_for_more_than_two_decimal_places' do
   before(:each) do
     create_transaction_amount
   end
@@ -38,7 +38,7 @@ describe 'TransactionAmount: check_for_more_than_two_decimal_places' do
   end
 end
 
-describe 'TransactionAmount: check_if_number_is_negative' do
+describe 'TransactionAmount: #check_if_number_is_negative' do
   before(:each) do
     create_transaction_amount
   end

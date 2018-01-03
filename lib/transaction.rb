@@ -1,3 +1,4 @@
+require 'balance'
 require 'transaction_amount'
 require 'transaction_date'
 

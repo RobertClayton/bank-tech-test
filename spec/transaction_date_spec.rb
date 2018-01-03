@@ -2,7 +2,7 @@ def create_transaction_date
   @transaction_date = TransactionDate.new
 end
 
-describe 'TransactionDate: new_date' do
+describe 'TransactionDate: #new_date' do
   before(:each) do
     create_transaction_date
   end
@@ -12,7 +12,7 @@ describe 'TransactionDate: new_date' do
   end
 end
 
-describe 'TransactionDate: check_format_date' do
+describe 'TransactionDate: #check_format_date' do
   before(:each) do
     create_transaction_date
   end
@@ -30,7 +30,7 @@ describe 'TransactionDate: check_format_date' do
   end
 end
 
-describe 'TransactionDate: check_date_is_not_in_future' do
+describe 'TransactionDate: #check_date_is_not_in_future' do
   before(:each) do
     create_transaction_date
   end
@@ -41,7 +41,7 @@ describe 'TransactionDate: check_date_is_not_in_future' do
   end
 end
 
-describe 'TransactionDate: check_for_letters' do
+describe 'TransactionDate: #check_for_letters' do
   before(:each) do
     create_transaction_date
   end

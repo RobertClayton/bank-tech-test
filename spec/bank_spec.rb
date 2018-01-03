@@ -2,7 +2,7 @@ def create_bank
   @bank = Bank.new
 end
 
-describe 'Bank: deposit' do
+describe 'Bank: #deposit' do
   before(:each) do
     create_bank
   end
