@@ -1,7 +1,23 @@
+class BalanceStub
+  def initialize
+    @balance = 0
+  end
+
+  def update_balance(amount)
+    @balance += amount
+  end
+end
+
+class StatementStub
+  def initialize; end
+end
+
 def create_transaction
   @amount_stub = 1000
+  @balance_stub = BalanceStub.new
   @date_stub = '10/10/2012'
-  @transaction = Transaction.new
+  @statement_stub = StatementStub.new
+  @transaction = Transaction.new(@balance_stub, @statement_stub)
 end
 
 describe 'Transaction: #deposit' do

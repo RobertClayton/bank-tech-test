@@ -1,10 +1,11 @@
-require './lib/balance.rb'
 require './lib/transaction_amount.rb'
 require './lib/transaction_date.rb'
 
 # This class will be used to make new withdrawal or deposit transactions
 class Transaction
-  def initialize
+  def initialize(balance, statement)
+    @balance = balance
+    @statement = statement
     @transaction_amount = TransactionAmount.new
     @transaction_date = TransactionDate.new
   end
@@ -12,6 +13,7 @@ class Transaction
   def deposit(amount, date)
     deposit_amount_validation_checks(amount)
     deposit_date_validation_checks(date)
+    update_balance(amount)
     'deposit accepted'
   end
 
@@ -25,5 +27,9 @@ class Transaction
   def deposit_date_validation_checks(date)
     @transaction_date.new_date(date)
     date
+  end
+
+  def update_balance(amount)
+    @balance.update_balance(amount)
   end
 end

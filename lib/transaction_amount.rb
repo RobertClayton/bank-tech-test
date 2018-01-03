@@ -1,4 +1,4 @@
-# TransactionAmount is resposible for checking the amount
+# TransactionAmount is resposible for validating the amount
 class TransactionAmount
   def initialize; end
 

@@ -1,6 +1,6 @@
 require 'date'
 
-# TransactionDate is resposible for the formatting of dates
+# TransactionDate is resposible for the validation of dates
 class TransactionDate
   def initialize; end
 

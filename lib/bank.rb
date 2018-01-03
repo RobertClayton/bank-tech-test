@@ -1,3 +1,4 @@
+require './lib/balance.rb'
 require './lib/transaction.rb'
 require './lib/statement.rb'
 
@@ -5,7 +6,9 @@ require './lib/statement.rb'
 # (desposit, withdraw, print statement)
 class Bank
   def initialize
-    @transaction = Transaction.new
+    @balance = Balance.new
+    @statement = Statement.new
+    @transaction = Transaction.new(@balance, @statement)
   end
 
   def deposit(amount, date)
