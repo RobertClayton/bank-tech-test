@@ -57,13 +57,13 @@ These tables are formatted as follows:
 
 | Transaction    |                    |
 |----------------|--------------------|
-| deposit        | transaction_amount |
-| update_balance | transaction_date   |
-| new_statement  |                    |
+| deposit        | balance            |
+| update_balance | transaction_amount |
+| new_statement  | transaction_date   |
 
-| TransactionDate |  |
-|-----------------|--|
-| new_date        |  |
+| TransactionDate |      |
+|-----------------|------|
+| new_date        | date |
 
 | TransactionAmount |  |
 |-------------------|--|
@@ -74,12 +74,10 @@ These tables are formatted as follows:
 | update_balance |  |
 | return_balance |  |
 
-
 | Statement       |                   |
 |-----------------|-------------------|
-| new_transaction | date              |
-| print           | balance           |
-|                 | statement_history |
+| new_transaction | balance           |
+| print           | statement_history |
 
 | Statement_History  |  |
 |--------------------|--|

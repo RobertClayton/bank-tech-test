@@ -1,4 +1,5 @@
 require './lib/transaction.rb'
+require './lib/statement.rb'
 
 # Bank is used by the user to perform an action:
 # (desposit, withdraw, print statement)
