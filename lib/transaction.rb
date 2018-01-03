@@ -14,6 +14,7 @@ class Transaction
     deposit_amount_validation_checks(amount)
     deposit_date_validation_checks(date)
     update_balance(amount)
+    add_new_statement(amount, date)
     'deposit accepted'
   end
 
@@ -31,5 +32,9 @@ class Transaction
 
   def update_balance(amount)
     @balance.update_balance(amount)
+  end
+
+  def add_new_statement(amount, date)
+    @statement.new(amount, date)
   end
 end

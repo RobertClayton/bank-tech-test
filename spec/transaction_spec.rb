@@ -10,6 +10,8 @@ end
 
 class StatementStub
   def initialize; end
+
+  def new(amount, date); end
 end
 
 def create_transaction

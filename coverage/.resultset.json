@@ -69,10 +69,14 @@
       ],
       "/Users/robertclayton/Library/Mobile Documents/com~apple~CloudDocs/Projects/bank-tech-test/spec/statement_spec.rb": [
         1,
-        0,
+        1,
         null,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
         1,
         1,
         null,
@@ -207,6 +211,8 @@
         1,
         1,
         null,
+        1,
+        null,
         null,
         1,
         1,
@@ -228,6 +234,6 @@
         null
       ]
     },
-    "timestamp": 1515003043
+    "timestamp": 1515003732
   }
 }

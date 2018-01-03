@@ -2,8 +2,12 @@ def create_statement
   @statement = Statement.new
 end
 
-describe 'Statement: #initialize' do
-  it 'test' do
-    expect('test').to eq('test')
+describe 'Statement: #new' do
+  before(:each) do
+    create_statement
+  end
+
+  it 'accepts two arguments' do
+    expect(@statement.new(1000, '10/01/2012')).to eq('New statement added')
   end
 end

@@ -2,7 +2,9 @@
 class Statement
   def initialize; end
 
-  def new; end
+  def new(amount, date)
+    'New statement added'
+  end
 
   def print; end
 end
