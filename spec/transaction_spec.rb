@@ -1,15 +1,16 @@
-def stubs
+def create_transaction
   @amount_stub = 1000
   @date_stub = '10/10/2012'
+  @transaction = Transaction.new
 end
 
-describe 'Transaction: initialize' do
+describe 'Transaction: deposit' do
   before(:each) do
-    stubs
-    @transaction = Transaction.new(@amount_stub, @date_stub)
+    create_transaction
   end
 
-  it 'amount defaults to 0' do
-    expect(@transaction.amount).to eq(@amount_stub)
+  it 'accepts two arguments' do
+    expect(@transaction.deposit(@amount_stub, @date_stub)).
+      to eq('deposit accepted')
   end
 end
