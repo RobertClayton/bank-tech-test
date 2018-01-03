@@ -6,5 +6,8 @@ class TransactionDate
 
   def new_date(date)
     Date.parse(date)
+    rescue ArgumentError
+      raise "Deposit rejected: incorrect date, please format as DD/MM/YYYY"
+    date
   end
 end
