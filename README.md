@@ -62,9 +62,9 @@ These tables are formatted as follows:
 | update_balance | statement |
 | new_statement  |           |
 
-| Date |  |
-|------|--|
-| date |  |
+| TransactionDate |  |
+|-----------------|--|
+| new_date        |  |
 
 | Balance |  |
 |---------|--|

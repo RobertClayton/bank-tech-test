@@ -1,6 +1,64 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/robertclayton/Library/Mobile Documents/com~apple~CloudDocs/Projects/bank-tech-test/spec/bank_spec.rb": [
+        1,
+        6,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/robertclayton/Library/Mobile Documents/com~apple~CloudDocs/Projects/bank-tech-test/spec/feature_spec.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/robertclayton/Library/Mobile Documents/com~apple~CloudDocs/Projects/bank-tech-test/spec/transaction_date_spec.rb": [
         1,
         5,
@@ -58,8 +116,19 @@
         2,
         null,
         null
+      ],
+      "/Users/robertclayton/Library/Mobile Documents/com~apple~CloudDocs/Projects/bank-tech-test/spec/transaction_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1514979399
+    "timestamp": 1514981217
   }
 }

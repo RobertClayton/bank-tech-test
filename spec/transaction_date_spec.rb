@@ -1,10 +1,10 @@
-def before_each
+def create_transaction_date
   @transaction_date = TransactionDate.new
 end
 
 describe 'TransactionDate: new_date' do
   before(:each) do
-    before_each
+    create_transaction_date
   end
 
   it 'will create a Date object from given string' do
@@ -14,7 +14,7 @@ end
 
 describe 'TransactionDate: check_format_date' do
   before(:each) do
-    before_each
+    create_transaction_date
   end
 
   it 'will throw error for incorrect day entry' do
@@ -32,7 +32,7 @@ end
 
 describe 'TransactionDate: check_date_is_not_in_future' do
   before(:each) do
-    before_each
+    create_transaction_date
   end
 
   it 'will throw error for future dates entered' do
@@ -43,7 +43,7 @@ end
 
 describe 'TransactionDate: check_for_letters' do
   before(:each) do
-    before_each
+    create_transaction_date
   end
 
   it 'will throw error for letters added in date' do

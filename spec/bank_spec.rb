@@ -2,21 +2,21 @@ def create_bank
   @bank = Bank.new
 end
 
-describe 'bank: deposit' do
+describe 'Bank: deposit' do
   before(:each) do
     create_bank
   end
 
-  it 'takes an amount as Integer and date' do
+  it 'takes an amount as Integer and String' do
     expect(@bank.deposit(1000, '10/01/2012')).to eq('Deposit accepted')
   end
 
-  it 'takes an amount as Float and date' do
+  it 'takes an amount as Float and String' do
     expect(@bank.deposit(1000.00, '10/01/2012')).to eq('Deposit accepted')
   end
 end
 
-describe 'bank: deposit amount validation checks' do
+describe 'Bank: deposit amount validation checks' do
   before(:each) do
     create_bank
   end
