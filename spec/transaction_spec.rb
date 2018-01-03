@@ -10,7 +10,7 @@ describe 'Transaction: deposit' do
   end
 
   it 'accepts two arguments' do
-    expect(@transaction.deposit(@amount_stub, @date_stub)).
-      to eq('deposit accepted')
+    expect(@transaction.deposit(@amount_stub, @date_stub))
+      .to eq('deposit accepted')
   end
 end

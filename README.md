@@ -55,20 +55,25 @@ These tables are formatted as follows:
 | withdraw        | statement   |
 | print_statement |             |
 
-| Transaction    |           |
-|----------------|-----------|
-| amount         | date      |
-| date           | balance   |
-| update_balance | statement |
-| new_statement  |           |
+| Transaction    |                    |
+|----------------|--------------------|
+| deposit        | transaction_amount |
+| update_balance | transaction_date   |
+| new_statement  |                    |
 
 | TransactionDate |  |
 |-----------------|--|
 | new_date        |  |
 
-| Balance |  |
-|---------|--|
-| balance |  |
+| TransactionAmount |  |
+|-------------------|--|
+| new_amount        |  |
+
+| Balance        |  |
+|----------------|--|
+| update_balance |  |
+| return_balance |  |
+
 
 | Statement       |                   |
 |-----------------|-------------------|
