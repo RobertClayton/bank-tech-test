@@ -6,6 +6,7 @@ class Bank
   def initialize; end
 
   def deposit(amount, date)
+    Transaction.new(amount, date)
     'Deposit accepted'
   end
 end

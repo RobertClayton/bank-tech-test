@@ -1,11 +1,11 @@
-def get_stubs
+def stubs
   @amount_stub = 1000
-  @date_stub = "10/10/2012"
+  @date_stub = '10/10/2012'
 end
 
 describe 'Transaction: initialize' do
   before(:each) do
-    get_stubs
+    stubs
     @transaction = Transaction.new(@amount_stub, @date_stub)
   end
 

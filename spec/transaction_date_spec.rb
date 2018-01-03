@@ -7,7 +7,7 @@ describe 'TransactionDate: new_date' do
     create_transaction_date
   end
 
-  it 'will create a Date object from given string' do
+  it 'will create a Date object from given String' do
     expect(@transaction_date.new_date('10/01/2012')).to be_instance_of(Date)
   end
 end
