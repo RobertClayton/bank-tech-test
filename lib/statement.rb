@@ -11,7 +11,7 @@ class Statement
     'New statement added'
   end
 
-  def print
+  def print_statement
     format_statement_list_for_print
   end
 

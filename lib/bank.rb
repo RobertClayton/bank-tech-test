@@ -15,4 +15,8 @@ class Bank
     @transaction.deposit(amount, date)
     'Deposit accepted'
   end
+
+  def print_statement
+    @statement.print_statement
+  end
 end

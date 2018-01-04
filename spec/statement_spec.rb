@@ -17,14 +17,14 @@ describe Statement do
       .to eq('New statement added')
   end
 
-  it '#print returns formatted statment of transactions' do
+  it '#print_statement returns formatted statment of transactions' do
     subject.new(1000, '10/01/2012', balance_stub)
     subject.new(2000, '12/01/2012', balance_stub)
-    expect(subject.print)
+    expect(subject.print_statement)
       .to eq([
-        "date || credit || debit || balance",
-        "12/01/2012 || 2000 ||  || 0",
-        "10/01/2012 || 1000 ||  || 0",
-        ])
+               'date || credit || debit || balance',
+               '12/01/2012 || 2000 ||  || 0',
+               '10/01/2012 || 1000 ||  || 0'
+             ])
   end
 end

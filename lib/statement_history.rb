@@ -28,7 +28,7 @@ class StatementHistory
   end
 
   def add_statement_title
-    @statement_to_print << "date || credit || debit || balance"
+    @statement_to_print << 'date || credit || debit || balance'
   end
 
   def update_printing_list
