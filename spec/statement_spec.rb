@@ -1,13 +1,19 @@
-def create_statement
-  @statement = Statement.new
-end
-
-describe 'Statement: #new' do
-  before(:each) do
-    create_statement
+class Balance
+  def initialize
+    @balance = 0
   end
 
-  it 'accepts two arguments' do
-    expect(@statement.new(1000, '10/01/2012')).to eq('New statement added')
+  def return_balance
+    @balance
+  end
+end
+
+describe Statement do
+  subject(:statement) { described_class.new }
+  let(:balance_stub) { Balance.new }
+
+  it '#new accepts two arguments' do
+    expect(subject.new(1000, '10/01/2012', balance_stub))
+      .to eq('New statement added')
   end
 end

@@ -1,9 +1,3 @@
-def create_statement_history
-  @statement_history = StatementHistory
-end
-
-describe 'StatementHistory:' do
-  before(:each) do
-    create_statement_history
-  end
+describe StatementHistory do
+  subject(:statement_history) { described_class.new }
 end

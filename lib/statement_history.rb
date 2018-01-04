@@ -2,7 +2,7 @@
 class StatementHistory
   def initialize; end
 
-  def new; end
+  def new(statement); end
 
   def return_all_statements; end
 end

@@ -35,6 +35,6 @@ class Transaction
   end
 
   def add_new_statement(amount, date)
-    @statement.new(amount, date)
+    @statement.new(amount, date, @balance)
   end
 end

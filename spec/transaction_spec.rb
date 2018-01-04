@@ -11,24 +11,21 @@ end
 class StatementStub
   def initialize; end
 
-  def new(amount, date); end
+  def new(amount, date, balance); end
 end
 
-def create_transaction
-  @amount_stub = 1000
-  @balance_stub = BalanceStub.new
-  @date_stub = '10/10/2012'
-  @statement_stub = StatementStub.new
-  @transaction = Transaction.new(@balance_stub, @statement_stub)
-end
+describe Transaction do
+  let(:balance_stub) { BalanceStub.new }
+  let(:statement_stub) { StatementStub.new }
+  subject(:transaction) { described_class.new(balance_stub, statement_stub) }
 
-describe 'Transaction: #deposit' do
   before(:each) do
-    create_transaction
+    @amount_stub = 1000
+    @date_stub = '10/10/2012'
   end
 
-  it 'accepts two arguments' do
-    expect(@transaction.deposit(@amount_stub, @date_stub))
+  it '#deposit accepts two arguments' do
+    expect(subject.deposit(@amount_stub, @date_stub))
       .to eq('deposit accepted')
   end
 end
