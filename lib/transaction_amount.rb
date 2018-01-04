@@ -32,11 +32,12 @@ class TransactionAmount
 
   def check_decimals(amount)
     if amount.to_s.include?('.') && amount.to_s[-3..-1].include?('.')
-      return true
-    elsif amount.to_s.include?('.')
-      return false
+      true
+    elsif amount.to_s.include?('.') &&
+          amount.to_s[-3..-1].include?('.') == false
+      false
     else
-      return true
+      true
     end
   end
 end

@@ -1,7 +1,5 @@
 # StatementHistory is responsible for storing the statements
 class StatementHistory
-  attr_reader :list_of_statements
-
   def initialize
     @list_of_statements = []
     @statement_to_print = []

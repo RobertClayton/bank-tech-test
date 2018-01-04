@@ -3,8 +3,11 @@ describe StatementHistory do
 
   it '#new appends the new statement to list_of_statements' do
     subject.new('10/10/2012 || 200 ||  || 200')
-    expect(subject.list_of_statements.last)
-      .to eq('10/10/2012 || 200 ||  || 200')
+    expect(subject.print_statement)
+      .to eq([
+               'date || credit || debit || balance',
+               '10/10/2012 || 200 ||  || 200'
+             ])
   end
 
   it '#print_statement returns all formatted statements in reverse order' do

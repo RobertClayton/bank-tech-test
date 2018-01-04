@@ -51,15 +51,14 @@ These tables are formatted as follows:
 
 | Bank            |             |
 |-----------------|-------------|
-| deposit         | transaction |
-| withdraw        | statement   |
-| print_statement |             |
+| deposit         | balance     |
+| withdraw        | transaction |
+| print_statement | statement   |
 
-| Transaction    |                    |
-|----------------|--------------------|
-| deposit        | balance            |
-| update_balance | transaction_amount |
-| new_statement  | transaction_date   |
+| Transaction |                    |
+|-------------|--------------------|
+| deposit     | transaction_amount |
+|             | transaction_date   |
 
 | TransactionDate |      |
 |-----------------|------|
@@ -76,13 +75,13 @@ These tables are formatted as follows:
 
 | Statement       |                   |
 |-----------------|-------------------|
-| new_transaction | balance           |
-| print           | statement_history |
+| new             | statement_history |
+| print_statement |                   |
 
-| Statement_History  |  |
-|--------------------|--|
-| new_transaction    |  |
-| list_of_statements |  |
+| Statement_History |  |
+|-------------------|--|
+| new               |  |
+| print_statement   |  |
 
 ### Edge cases
 
