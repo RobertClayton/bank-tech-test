@@ -11,7 +11,9 @@ class Statement
     'New statement added'
   end
 
-  def print; end
+  def print
+    format_statement_list_for_print
+  end
 
   private
 
@@ -19,8 +21,11 @@ class Statement
     credit = amount if amount >= 0
     debit = amount if amount < 0
     current_balance = balance.return_balance
-
     statement = "#{date} || #{credit} || #{debit} || #{current_balance}"
     @statement_history.new(statement)
+  end
+
+  def format_statement_list_for_print
+    @statement_history.print_statement
   end
 end
