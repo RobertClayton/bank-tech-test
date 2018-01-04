@@ -1,15 +1,5 @@
 # Bank tech test
 
-Today, you'll practice doing a tech test.
-
-For most tech tests, you'll essentially have unlimited time.  This practice session is about producing the best code you can when there is a minimal time pressure.
-
-You'll get to practice your OO design and TDD skills.
-
-You'll work alone, and you'll also review your own code so you can practice reflecting on and improving your own work.
-
-## Specification
-
 ### Requirements
 
 * You should be able to interact with your code via a REPL like IRB or the JavaScript console.  (You don't need to implement a command line interface that takes input from STDIN.)
@@ -31,13 +21,30 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 ||  || 3000.00
 10/01/2012 || 1000.00 ||  || 1000.00
 ```
+---------
+## My Comments
 
-## Notes
+When writing this tech test I have focused on quality and paying close attention to principles like the single responsibility principle. In doing so I have not had enough time to implement the withdraw method, as paying close attention to the edge cases this would take a long time to craft with best practices. However I hope the detail and principles included in the deposit method would go some way to show my ability as the withdraw method is along the same vein as the deposit method.
 
-* Statement appears in reverse order
-* American formatted date
-* Numbers as floats with 2 decimal points
-* Run through IRB
+## Using the project
+
+### Install
+1. Fork this repo, and clone to your local machine
+2. Run the command `gem install bundle` (if you don't have bundle already)
+3. When the installation completes, run `bundle`
+4. Run `irb`
+5. Run `require './lib/bank.rb'`
+6. Run `bank = Bank.new`   
+The bank application is now ready to use and you have two commands: deposit & print_statement
+7. Deposit: You have to pass two parameters into deposit, the amount to be deposited and the date as a string in the following format MM/DD/YYYY. e.g. `bank.deposit(1000, '10/10/2012')`
+8. Print: to print the statement run `bank.print_statement`
+
+### Testing
+1. Fork this repo, and clone to your local machine
+2. Run the command `gem install bundle` (if you don't have bundle already)
+3. When the installation completes, run `bundle`
+4. Run `bundle exec rspec`    
+ additionally if you wish to check to formatting please run `rubocop`
 
 ### Map of project
 
@@ -82,13 +89,3 @@ These tables are formatted as follows:
 |-------------------|--|
 | new               |  |
 | print_statement   |  |
-
-### Edge cases
-
-* Cannot deposit a negative amount
-* Cannot withdraw a negative amount
-* Cannot withdraw more than the balance
-* Cannot input more than 2 decimal points
-* Cannot use an invalid Date
-* Cannot use a Date in the future
-* When making a new transaction, date & amount must be entered in the correct order
