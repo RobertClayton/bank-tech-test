@@ -27,6 +27,16 @@ class TransactionAmount
 
   def check_for_more_than_two_decimal_places(amount)
     raise 'Deposit rejected, amounts cannot exceed two decimal places' unless
-    amount.to_s[-3..-1].include?('.') || amount.to_s.include?('.') == false
+    check_decimals(amount)
+  end
+
+  def check_decimals(amount)
+    if amount.to_s.include?('.') && amount.to_s[-3..-1].include?('.')
+      return true
+    elsif amount.to_s.include?('.')
+      return false
+    else
+      return true
+    end
   end
 end
